@@ -7,15 +7,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Image Editor</title>
     <style type="text/css">
-         [ng-cloak].loader {
-            display: block!important;
-        }
-
-        [ng-cloak] {
-            display: none;
+        [ng-cloak]#loader {
+            display: block!important
         }
         
-        .loader {
+        [ng-cloak] {
+            display: none
+        }
+        
+        #loader {
         font-family: sans-serif;
         display: flex;
         flex-direction: column;
@@ -135,7 +135,7 @@
 
 <body id="editor" ng-app="ImageEditor" ng-strict-di>
 
-    <div class="loader">
+    <div id="loader" ng-cloak>
       <div class="pencil">
         <div class="pencil__ball-point"></div>
         <div class="pencil__cap"></div>
